@@ -1,0 +1,14 @@
+Zad1
+ Implicit: <Style TargetType="Label">, Explicit: TitleStyle i ButtonStyle
+
+Zad2
+ Czerwony
+    
+Zad3                                                                     
+ Domyślnej
+
+Zad4                                                             
+ Tytuł i przyciski z ButtonStyle zmienią kolor na czerwony   
+
+Zad5                   
+ Tak, jeśli chcesz zmieniać zasób w czasie działania aplikacji (np. motyw)      
