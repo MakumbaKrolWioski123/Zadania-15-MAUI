@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp11.NewPage1"
+             Title="NewPage1">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="Cyan"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+        </Style>
+        <Style x:Key="PrimaryButtonStyle" TargetType="Button">
+            <Setter Property="TextColor" Value="Cyan"/>
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="BackgroundColor" Value="Blue"/>
+            <Setter Property="BorderWidth" Value="2"/>
+            <Setter Property="BorderColor" Value="Black"/>
+
+        </Style>
+        <Style x:Key="SecondaryButtonStyle" TargetType="Button">
+            <Setter Property="TextColor" Value="CornflowerBlue"/>
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="BackgroundColor" Value="LightGray"/>
+            <Setter Property="BorderWidth" Value="2"/>
+            <Setter Property="BorderColor" Value="Black"/>
+        </Style>
+        <Style x:Key="DangerButtonStyle" TargetType="Button">
+            <Setter Property="TextColor" Value="Red"/>
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="BackgroundColor" Value="LightPink"/>
+            <Setter Property="BorderWidth" Value="2"/>
+            <Setter Property="BorderColor" Value="Black"/>
+        </Style>
+        <Style x:Key="ProductCardStyle" TargetType="Frame">
+            <Setter Property="Padding" Value="15" />
+            <Setter Property="Margin" Value="15" />
+            <Setter Property="CornerRadius" Value="12" />
+            <Setter Property="BackgroundColor" Value="Gray" />
+            <Setter Property="BorderColor" Value="White" />
+            <Setter Property="HasShadow" Value="True" />
+        </Style>
+    </ContentPage.Resources>
+    <ScrollView>
+        <VerticalStackLayout>
+            <Frame Style="{StaticResource ProductCardStyle}">
+                <VerticalStackLayout Spacing="12">
+                    <Label 
+                    Text="Produkty:"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+                    <Label 
+                    Text="Japki: 100Zł"
+                    VerticalOptions="Center"
+                    />
+                    <HorizontalStackLayout Spacing="5">
+                        <Button 
+                        Style="{StaticResource PrimaryButtonStyle}"
+                        Text="Dodaj do koszyka"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center" />
+                        <Button
+                        Style="{StaticResource SecondaryButtonStyle}"
+                        Text="Zobacz Więcej"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center" />
+                        <Button
+                        Style="{StaticResource DangerButtonStyle}"
+                        Text="Usuń z koszyka"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center" />
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
